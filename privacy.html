@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgentBox 隐私政策 - AgentBox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #FAF8F5;
+            --text-color: #1A1918;
+            --accent-color: #EE8569;
+            --card-bg: #FFFFFF;
+            --border-color: #E6E4E0;
+            --muted-text: #605E5B;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #121110;
+                --text-color: #ECEAE6;
+                --accent-color: #EE8569;
+                --card-bg: #1C1B1A;
+                --border-color: #2E2D2A;
+                --muted-text: #A09E9B;
+            }
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.68;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 48px 24px 96px;
+        }
+        .header {
+            margin-bottom: 48px;
+            text-align: center;
+        }
+        .logo-wrap {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background-color: rgba(238, 133, 105, 0.1);
+            color: var(--accent-color);
+            margin-bottom: 16px;
+        }
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.25rem;
+            font-weight: 700;
+            margin: 0 0 12px;
+            letter-spacing: -0.02em;
+        }
+        .meta {
+            font-size: 0.875rem;
+            color: var(--muted-text);
+        }
+        .content {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.02);
+        }
+        h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 36px 0 16px;
+            letter-spacing: -0.01em;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+        h3 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin: 24px 0 12px;
+        }
+        p {
+            margin: 0 0 16px;
+        }
+        ul {
+            margin: 0 0 24px;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.2s;
+        }
+        a:hover {
+            opacity: 0.8;
+        }
+        footer {
+            margin-top: 48px;
+            text-align: center;
+            font-size: 0.875rem;
+            color: var(--muted-text);
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 24px 16px 48px;
+            }
+            .content {
+                padding: 24px 16px;
+                border-radius: 16px;
+            }
+            h1 {
+                font-size: 1.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo-wrap">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+            </div>
+            <h1>AgentBox 隐私政策</h1>
+            <div class="meta">更新日期：2026年6月26日 | 生效日期：2026年6月26日</div>
+        </div>
+        <div class="content">
+                <p>AgentBox（以下简称“本应用”）是由开发者个人/团队（以下简称“我们”）开发的一款跨平台 SSH 工作区与终端工具。我们非常重视您的隐私。本隐私政策旨在向您说明我们如何收集、使用、存储和保护您的个人信息。</p>
+    <h3>1. 核心安全与免责声明（重要）</h3>
+    <p>作为一款本地客户端工具，本应用遵循“本地优先”原则：</p>
+    <ul>
+        <li><strong>敏感凭证本地化</strong>：您的服务器连接信息（包括 IP 地址、端口、用户名、密码、SSH 私钥等）仅以加密形式存储在您的本地设备上。我们<strong>不会</strong>将您的连接凭证上传至我们的任何服务器。</li>
+        <li><strong>生物识别数据</strong>：当您启用指纹或面容解锁时，本应用仅调用系统级安全接口（如 iOS Keychain/Android Keystore）进行本地比对，我们<strong>不收集</strong>且<strong>无权访问</strong>您的任何生物识别数据。</li>
+    </ul>
+    <h3>2. 数据的收集与使用</h3>
+    <p>我们仅在以下必要场景下收集或传输特定数据：</p>
+    <ul>
+        <li><strong>AI 终端助手</strong>：当您使用 AI 终端助手功能时，您的指令或命令行上下文将被发送至您配置的 AI 提供商（如 Google, OpenAI 等）进行处理。这是提供 AI 服务所必需的，本应用不会存储或分析这些输入。</li>
+        <li><strong>网络与基础连接</strong>：本应用需要网络权限以建立 SSH/SFTP 连接、进行网络唤醒（WOL）以及请求 AI 接口。</li>
+        <li><strong>本地日志</strong>：在您遇到问题时，您可以选择主动复制并提供运行日志以帮助我们定位问题。日志仅包含基本的诊断信息，不包含您的密码或私钥。</li>
+    </ul>
+    <h3>3. 权限的调用说明</h3>
+    <p>为了提供完整的功能，我们可能会在您使用特定功能时申请以下系统权限：</p>
+    <ul>
+        <li><strong>网络权限</strong>：用于连接您的远程服务器和 AI 接口。</li>
+        <li><strong>存储/文件读写权限</strong>：用于 SFTP 文件上传/下载、导入 SSH 密钥文件。</li>
+        <li><strong>生物识别权限</strong>：用于 App 解锁保护。</li>
+        <li><strong>通知权限</strong>：用于后台连接状态通知。</li>
+    </ul>
+    <h3>4. 您的权利与注销</h3>
+    <p>由于本应用为无账号的本地工具，所有数据均存储在您的本地设备上。您可以通过直接卸载应用来清除所有数据。</p>
+    <p>如果您有任何疑问，请通过 GitHub Issues 与我们联系。</p>
+        </div>
+        <footer>
+            &copy; 2026 AgentBox. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>

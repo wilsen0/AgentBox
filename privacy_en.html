@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgentBox Privacy Policy - AgentBox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #FAF8F5;
+            --text-color: #1A1918;
+            --accent-color: #EE8569;
+            --card-bg: #FFFFFF;
+            --border-color: #E6E4E0;
+            --muted-text: #605E5B;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #121110;
+                --text-color: #ECEAE6;
+                --accent-color: #EE8569;
+                --card-bg: #1C1B1A;
+                --border-color: #2E2D2A;
+                --muted-text: #A09E9B;
+            }
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.68;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 48px 24px 96px;
+        }
+        .header {
+            margin-bottom: 48px;
+            text-align: center;
+        }
+        .logo-wrap {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background-color: rgba(238, 133, 105, 0.1);
+            color: var(--accent-color);
+            margin-bottom: 16px;
+        }
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.25rem;
+            font-weight: 700;
+            margin: 0 0 12px;
+            letter-spacing: -0.02em;
+        }
+        .meta {
+            font-size: 0.875rem;
+            color: var(--muted-text);
+        }
+        .content {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.02);
+        }
+        h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 36px 0 16px;
+            letter-spacing: -0.01em;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+        h3 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin: 24px 0 12px;
+        }
+        p {
+            margin: 0 0 16px;
+        }
+        ul {
+            margin: 0 0 24px;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.2s;
+        }
+        a:hover {
+            opacity: 0.8;
+        }
+        footer {
+            margin-top: 48px;
+            text-align: center;
+            font-size: 0.875rem;
+            color: var(--muted-text);
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 24px 16px 48px;
+            }
+            .content {
+                padding: 24px 16px;
+                border-radius: 16px;
+            }
+            h1 {
+                font-size: 1.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo-wrap">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+            </div>
+            <h1>AgentBox Privacy Policy</h1>
+            <div class="meta">Last Updated: June 26, 2026 | Effective Date: June 26, 2026</div>
+        </div>
+        <div class="content">
+                <p>AgentBox ("the App") is a cross-platform SSH workspace and terminal tool developed by the developer team ("we", "us", or "our"). We respect your privacy and are committed to protecting it through our compliance with this policy.</p>
+    <h3>1. Core Security & Disclaimer (Important)</h3>
+    <p>As a local-first client tool, the App adheres to the following privacy-first principles:</p>
+    <ul>
+        <li><strong>Local Credentials</strong>: Your server connection details (including IP addresses, ports, usernames, passwords, SSH private keys) are stored encrypted <strong>only</strong> on your local device. We <strong>never</strong> upload or transmit your credentials to our servers.</li>
+        <li><strong>Biometric Data</strong>: When you enable biometric authentication (fingerprint/Face ID), the App only invokes the system-secure APIs (e.g., iOS Keychain/Android Keystore). We <strong>do not collect</strong> and <strong>cannot access</strong> your biometric data.</li>
+    </ul>
+    <h3>2. Data Collection and Usage</h3>
+    <p>We only collect or transmit data in the following essential scenarios:</p>
+    <ul>
+        <li><strong>AI Terminal Assistant</strong>: When using the AI Assistant, your prompts and CLI context will be sent directly to your configured AI Provider (e.g., Google, OpenAI) for processing. The App itself does not store or analyze these prompts.</li>
+        <li><strong>Network Connectivity</strong>: The App requires network permissions to establish SSH/SFTP connections, perform Wake-on-LAN (WOL), and access AI services.</li>
+        <li><strong>Diagnostics Logs</strong>: If you experience errors, you may choose to copy and share logs with us to help troubleshoot. Logs contain basic runtime traces and <strong>never</strong> expose password or private key data.</li>
+    </ul>
+    <h3>3. System Permissions</h3>
+    <p>We may request the following permissions only when necessary:</p>
+    <ul>
+        <li><strong>Network Access</strong>: To connect to remote servers and AI services.</li>
+        <li><strong>Storage / Files Access</strong>: To import SSH keys and perform SFTP file transfers.</li>
+        <li><strong>Biometric Auth</strong>: To unlock the App secure shield.</li>
+        <li><strong>Notifications</strong>: To maintain SSH connection status in the background.</li>
+    </ul>
+    <h3>4. Your Rights & Data Deletion</h3>
+    <p>Since this is an account-free, local utility app, all data resides on your device. You can completely erase all data associated with the App by uninstalling it.</p>
+    <p>If you have questions, please reach out via GitHub Issues.</p>
+        </div>
+        <footer>
+            &copy; 2026 AgentBox. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
